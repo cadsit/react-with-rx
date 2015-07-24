@@ -1,0 +1,33 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "A simple todo list application in React using Flux and Rx",
+  "main": "app.js",
+  "scripts": {
+    "init": "npm install && node node_modules/tsd/build/cli.js install && mkdir -p dist",
+    "clean": "rm -rf dist/*",
+    "build": "node node_modules/typescript/bin/tsc.js -p . && node node_modules/browserify/bin/cmd.js dist/*.js --debug -o dist/bundle.js && cp index.html dist/",
+    "serve": "http-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cadsit/react-with-rx/todos"
+  },
+  "keywords": [
+    "React",
+    "Flux",
+    "Rx"
+  ],
+  "author": "Connor Adsit <connor.adsit@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "immutable": "^3.7.4",
+    "react": "^0.13.3",
+    "rx": "^2.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "tsd": "^0.6.3",
+    "typescript": "^1.5.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "target": "ES5",
+        "outDir": "dist"
+    },
+    "files": [
+        "typings/tsd.d.ts",
+        "node_modules/immutable/dist/immutable.d.ts",
+        "src/app.ts"
+    ]
+}
